@@ -9,11 +9,11 @@
   },
   "husky": {
     "hooks": {
-      "precommit": "lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
-    "*.{ts,js,tsx,jsx}": ["eslint --fix", "jest --coverage --changedSince=master", "git add"]
+    "*.{ts,js,tsx,jsx}": ["eslint --fix", "jest --coverage --findRelatedTests", "git add"]
   },
   "keywords": [],
   "author": "github.com/martingaston",
